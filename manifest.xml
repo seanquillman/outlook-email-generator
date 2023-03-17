@@ -6,12 +6,12 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="GPT Email Assistant"/>
   <Description DefaultValue="Generate email responses using GPT"/>
-  <IconUrl DefaultValue="https://your_domain.com/icon.png"/>
+  <IconUrl DefaultValue="https://seanquillman.github.io/outlook-email-generator/icon.png"/>
   <Capabilities>
     <Capability Name="MailApp"/>
   </Capabilities>
   <DesktopSettings>
-    <SourceLocation DefaultValue="https://your_domain.com/index.html"/>
+    <SourceLocation DefaultValue="https://seanquillman.github.io/outlook-email-generator/index.html"/>
     <RequestedHeight>250</RequestedHeight>
   </DesktopSettings>
   <Permissions>ReadWriteItem</Permissions>
@@ -30,11 +30,11 @@
             <Description resid="superTipDescription"/>
           </Supertip>
           <Icon>
-            <IconUrl DefaultValue="https://your_domain.com/icon.png" />
+            <IconUrl DefaultValue="https://seanquillman.github.io/outlook-email-generator/icon.png" />
           </Icon>
           <Action xsi:type="ShowTask
           <Action xsi:type="ShowTaskPane">
-            <SourceLocation DefaultValue="https://your_domain.com/settings.html"/>
+            <SourceLocation DefaultValue="https://seanquillman.github.io/outlook-email-generator/settings.html"/>
           </Action>
         </Control>
       </Group>
@@ -42,11 +42,11 @@
   </ExtensionPoint>
   <Resources>
     <bt:Images>
-      <bt:Image id="icon16" DefaultValue="https://your_domain.com/icon16.png"/>
-      <bt:Image id="icon80" DefaultValue="https://your_domain.com/icon80.png"/>
+      <bt:Image id="icon16" DefaultValue="https://seanquillman.github.io/outlook-email-generator/icon16.png"/>
+      <bt:Image id="icon80" DefaultValue="https://seanquillman.github.io/outlook-email-generator/icon80.png"/>
     </bt:Images>
     <bt:Urls>
-      <bt:Url id="residExtensionPageUrl" DefaultValue="https://your_domain.com/settings.html"/>
+      <bt:Url id="residExtensionPageUrl" DefaultValue="https://seanquillman.github.io/outlook-email-generator/settings.html"/>
     </bt:Urls>
     <bt:ShortStrings>
       <bt:String id="groupLabel" DefaultValue="GPT Email Assistant"/>
