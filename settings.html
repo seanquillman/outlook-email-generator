@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Settings</title>
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Settings</h1>
+  <div>
+    <label>Formality: </label>
+    <select id="formality">
+      <option value="informal">Informal</option>
+      <option value="neutral">Neutral</option>
+      <option value="formal">Formal</option>
+    </select>
+  </div>
+  <div>
+    <label>Audience: </label>
+    <input type="text" id="audience" placeholder="Enter audience (e.g., client, coworker)">
+  </div>
+  <div>
+    <label>Length: </label>
+    <input type="number" id="length" placeholder="Enter email length (in words)">
+  </div>
+  <div>
+    <label>Key Points: </label>
+    <textarea id="key-points" rows="5" cols="30" placeholder="Enter key points to cover in the email"></textarea>
+  </div>
+  <button onclick="generateEmail()">Generate Email</button>
+</body>
+</html>

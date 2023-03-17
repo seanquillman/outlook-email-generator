@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="MessageReadCommand">
+  <Id>YOUR_UNIQUE_ID</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Your Name</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="GPT Email Assistant"/>
+  <Description DefaultValue="Generate email responses using GPT"/>
+  <IconUrl DefaultValue="https://your_domain.com/icon.png"/>
+  <Capabilities>
+    <Capability Name="MailApp"/>
+  </Capabilities>
+  <DesktopSettings>
+    <SourceLocation DefaultValue="https://your_domain.com/index.html"/>
+    <RequestedHeight>250</RequestedHeight>
+  </DesktopSettings>
+  <Permissions>ReadWriteItem</Permissions>
+  <Rule xsi:type="RuleCollection" Mode="Or">
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read"/>
+  </Rule>
+  <DisableEntityHighlighting>false</DisableEntityHighlighting>
+  <ExtensionPoint xsi:type="MessageRead">
+    <OfficeTab id="TabDefault">
+      <Group id="msgReadGroup">
+        <Label resid="groupLabel"/>
+        <Control xsi:type="Button" id="msgReadButton">
+          <Label resid="buttonLabel"/>
+          <Supertip>
+            <Title resid="buttonLabel"/>
+            <Description resid="superTipDescription"/>
+          </Supertip>
+          <Icon>
+            <IconUrl DefaultValue="https://your_domain.com/icon.png" />
+          </Icon>
+          <Action xsi:type="ShowTask
+          <Action xsi:type="ShowTaskPane">
+            <SourceLocation DefaultValue="https://your_domain.com/settings.html"/>
+          </Action>
+        </Control>
+      </Group>
+    </OfficeTab>
+  </ExtensionPoint>
+  <Resources>
+    <bt:Images>
+      <bt:Image id="icon16" DefaultValue="https://your_domain.com/icon16.png"/>
+      <bt:Image id="icon80" DefaultValue="https://your_domain.com/icon80.png"/>
+    </bt:Images>
+    <bt:Urls>
+      <bt:Url id="residExtensionPageUrl" DefaultValue="https://your_domain.com/settings.html"/>
+    </bt:Urls>
+    <bt:ShortStrings>
+      <bt:String id="groupLabel" DefaultValue="GPT Email Assistant"/>
+      <bt:String id="buttonLabel" DefaultValue="Generate Response"/>
+      <bt:String id="taskPaneTitle" DefaultValue="Settings"/>
+    </bt:ShortStrings>
+    <bt:LongStrings>
+      <bt:String id="superTipDescription" DefaultValue="Click to generate an email response with GPT"/>
+    </bt:LongStrings>
+  </Resources>
+</OfficeApp>
